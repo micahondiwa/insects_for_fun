@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Insect Animation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="controls">
+    <label for="insectSize">Insect Size:</label>
+    <input type="range" id="insectSize" min="20" max="100" value="50">
+    
+    <label for="insectSpeed">Insect Speed:</label>
+    <input type="range" id="insectSpeed" min="1" max="10" value="5">
+    
+    <label for="insectType">Insect Type:</label>
+    <select id="insectType">
+        <option value="ladybird">Ladybird</option>
+        <option value="beetle">Beetle</option>
+        <option value="cockroach">Cockroach</option>
+    </select>
+</div>
+
+<canvas id="insectCanvas"></canvas>
+
+<script src="script.js"></script>
+</body>
+</html>
